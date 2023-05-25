@@ -121,41 +121,28 @@ public class Login extends javax.swing.JFrame {
                 Usuario dadosUsuario = infoUsuario.getUsuario();
                 // verificacao de permissao para mostar o painel correto
                 switch(dadosUsuario.getCd_permissao()) {
+                    //entregador
                     case 9:
-                        FrmEntregas entregador = new FrmEntregas();
+                        DashboardEntregador entregador = new DashboardEntregador();
                         entregador.setVisible(true);
                         entregador.setLocationRelativeTo(null);
-                        entregador.setTitle("GoCode Control - Entregas");
+                        entregador.setTitle("GoCode Control - Entregador");
                         entregador.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
-                        
-                        FrmUnidade unidade = new FrmUnidade();
-                        unidade.setVisible(true);
-                        unidade.setLocationRelativeTo(null);
-                        unidade.setTitle("GoCode Control - Unidades");
-                        unidade.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
+                    //produtor
                     case 10:
-                        FrmProduto produto = new FrmProduto();
-                        produto.setVisible(true);
-                        produto.setLocationRelativeTo(null);
-                        produto.setTitle("GoCode Control - Produtos");
-                        produto.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
-                        FrmTalhao talhao = new FrmTalhao();
-                        talhao.setVisible(true);
-                        talhao.setLocationRelativeTo(null);
-                        talhao.setTitle("GoCode Control - Talhões");
-                        talhao.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
-                        FrmCultivo cultivo = new FrmCultivo();
-                        cultivo.setVisible(true);
-                        cultivo.setLocationRelativeTo(null);
-                        cultivo.setTitle("GoCode Control - Cultivos");
-                        cultivo.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
+                        DashboardProdutor produtor = new DashboardProdutor();
+                        produtor.setVisible(true);
+                        produtor.setLocationRelativeTo(null);
+                        produtor.setTitle("GoCode Control - Produtor");
+                        produtor.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
+                    //admin  
                     case 11:
                         DashboardInicio dashboard = new DashboardInicio();
                         dashboard.setVisible(true);
                         dashboard.setLocationRelativeTo(null);
-                        dashboard.setTitle("GoCode Control - Dashboard");
+                        dashboard.setTitle("GoCode Control - Administrativo");
                         dashboard.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                         dashboard.nome_usuario_label2.setText(dadosUsuario.getNome_usuario());
                         dashboard.carregaSession(dadosUsuario);  

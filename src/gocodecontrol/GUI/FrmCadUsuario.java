@@ -28,7 +28,7 @@ public class FrmCadUsuario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(255, 102, 0));
+        jPanel2.setBackground(new java.awt.Color(115, 78, 166));
 
         label2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         label2.setForeground(new java.awt.Color(255, 255, 255));
@@ -50,8 +50,6 @@ public class FrmCadUsuario extends javax.swing.JFrame {
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
-
-        label2.getAccessibleContext().setAccessibleName("Cadastrar usuário");
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 

@@ -19,7 +19,6 @@ public class FrmTalhao extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        nome_usuario_label = new java.awt.Label();
         label2 = new java.awt.Label();
         jPanel1 = new javax.swing.JPanel();
         btnCadastrar = new java.awt.Button();
@@ -39,11 +38,7 @@ public class FrmTalhao extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(255, 102, 0));
-
-        nome_usuario_label.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nome_usuario_label.setForeground(new java.awt.Color(255, 255, 255));
-        nome_usuario_label.setText("{nome_usuario}");
+        jPanel2.setBackground(new java.awt.Color(115, 78, 166));
 
         label2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         label2.setForeground(new java.awt.Color(255, 255, 255));
@@ -56,17 +51,13 @@ public class FrmTalhao extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 489, Short.MAX_VALUE)
-                .addComponent(nome_usuario_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(613, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(nome_usuario_label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -368,7 +359,6 @@ public class FrmTalhao extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private java.awt.Label label2;
-    public java.awt.Label nome_usuario_label;
     private javax.swing.JTable tableTalhao;
     private javax.swing.JTextField txtProduto;
     private javax.swing.JTextField txtValor;
