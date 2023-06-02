@@ -122,7 +122,7 @@ public class Login extends javax.swing.JFrame {
                 // verificacao de permissao para mostar o painel correto
                 switch(dadosUsuario.getCd_permissao()) {
                     //entregador
-                    case 4:
+                    case 9:
                         DashboardEntregador entregador = new DashboardEntregador();
                         entregador.setVisible(true);
                         entregador.setLocationRelativeTo(null);
@@ -130,7 +130,7 @@ public class Login extends javax.swing.JFrame {
                         entregador.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
                     //produtor
-                    case 1:
+                    case 10:
                         DashboardProdutor produtor = new DashboardProdutor();
                         produtor.setVisible(true);
                         produtor.setLocationRelativeTo(null);
@@ -138,7 +138,7 @@ public class Login extends javax.swing.JFrame {
                         produtor.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
                     //admin  
-                    case 2:
+                    case 11:
                         DashboardInicio dashboard = new DashboardInicio();
                         dashboard.setVisible(true);
                         dashboard.setLocationRelativeTo(null);
@@ -148,7 +148,7 @@ public class Login extends javax.swing.JFrame {
                         dashboard.carregaSession(dadosUsuario);  
                     break;
                     //parceiro  
-                    case 3:
+                    case 12:
                         DashboardParceiro parceiro = new DashboardParceiro();
                         parceiro.setVisible(true);
                         parceiro.setLocationRelativeTo(null);

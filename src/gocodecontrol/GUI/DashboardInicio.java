@@ -83,6 +83,7 @@ public class DashboardInicio extends javax.swing.JFrame {
         btnUsuario.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnUsuario.setForeground(new java.awt.Color(255, 255, 255));
         btnUsuario.setLabel("Usuário");
+        btnUsuario.setVisible(false);
         btnUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUsuarioActionPerformed(evt);
@@ -93,6 +94,7 @@ public class DashboardInicio extends javax.swing.JFrame {
         btnUnidade.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnUnidade.setForeground(new java.awt.Color(255, 255, 255));
         btnUnidade.setLabel("Unidade");
+        btnUnidade.setVisible(false);
         btnUnidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUnidadeActionPerformed(evt);
@@ -114,6 +116,7 @@ public class DashboardInicio extends javax.swing.JFrame {
         btnComanda.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnComanda.setForeground(new java.awt.Color(255, 255, 255));
         btnComanda.setLabel("Comandas");
+        btnComanda.setVisible(false);
         btnComanda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnComandaActionPerformed(evt);
@@ -125,6 +128,7 @@ public class DashboardInicio extends javax.swing.JFrame {
         btnEntrega.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnEntrega.setForeground(new java.awt.Color(255, 255, 255));
         btnEntrega.setLabel("Entregas");
+        btnEntrega.setVisible(false);
         btnEntrega.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEntregaActionPerformed(evt);
@@ -144,12 +148,12 @@ public class DashboardInicio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnTalhao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnUnidade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(btnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(btnCultivo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnComanda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnComanda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(btnProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnEntrega, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -170,7 +174,7 @@ public class DashboardInicio extends javax.swing.JFrame {
                 .addComponent(btnUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnUnidade, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 226, Short.MAX_VALUE)
                 .addComponent(nome_usuario_label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -297,12 +301,12 @@ public class DashboardInicio extends javax.swing.JFrame {
 
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
         // TODO add your handling code here:
-        FrmUsuario usuario = new FrmUsuario();
-        usuario.setVisible(true);
-        usuario.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        usuario.setLocationRelativeTo(null);
-        usuario.setTitle("GoCode Control - Usuários");
-        usuario.setFocusableWindowState(true);
+        FrmUsuario usu = new FrmUsuario();
+        usu.setVisible(true);
+        usu.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        usu.setLocationRelativeTo(null);
+        usu.setTitle("GoCode Control - Usuários");
+        usu.setFocusableWindowState(true);
         //usuario.nome_usuario_label.setText(this.usuario.getNome_usuario());
     }//GEN-LAST:event_btnUsuarioActionPerformed
 

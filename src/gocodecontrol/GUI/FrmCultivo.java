@@ -97,7 +97,7 @@ public class FrmCultivo extends javax.swing.JFrame {
 
         graficoQuantidade.setBackground(new java.awt.Color(115, 78, 166));
         graficoQuantidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        graficoQuantidade.setForeground(new java.awt.Color(115, 78, 166));
+        graficoQuantidade.setForeground(new java.awt.Color(255, 255, 255));
         graficoQuantidade.setText("Cultivo por Produto");
         graficoQuantidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,9 +105,9 @@ public class FrmCultivo extends javax.swing.JFrame {
             }
         });
 
-        status_cultivo.setBackground(new java.awt.Color(0, 102, 102));
+        status_cultivo.setBackground(new java.awt.Color(255, 255, 255));
         status_cultivo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        status_cultivo.setForeground(new java.awt.Color(255, 255, 255));
+        status_cultivo.setForeground(new java.awt.Color(115, 78, 166));
         status_cultivo.setText("Cultivo por Produtor");
         status_cultivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,9 +115,9 @@ public class FrmCultivo extends javax.swing.JFrame {
             }
         });
 
-        produtor_produto.setBackground(new java.awt.Color(0, 102, 102));
+        produtor_produto.setBackground(new java.awt.Color(115, 78, 166));
         produtor_produto.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        produtor_produto.setForeground(new java.awt.Color(115, 78, 166));
+        produtor_produto.setForeground(new java.awt.Color(255, 255, 255));
         produtor_produto.setText("Cultivo porduto e Produtor");
         produtor_produto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +145,8 @@ public class FrmCultivo extends javax.swing.JFrame {
             }
         });
 
-        apagarBtn.setBackground(new java.awt.Color(255, 0, 0));
+        apagarBtn.setBackground(new java.awt.Color(115, 78, 166));
+        apagarBtn.setForeground(new java.awt.Color(255, 255, 255));
         apagarBtn.setText("Apagar");
         apagarBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,25 +167,27 @@ public class FrmCultivo extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(btnCadastrarCultivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnListarDados1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(graficoQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(produtor_produto, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(status_cultivo)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(codigo_apagar, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(apagarBtn)))
-                .addContainerGap(566, Short.MAX_VALUE))
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jScrollPane1)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnCadastrarCultivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnListarDados1, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(graficoQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(produtor_produto, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(codigo_apagar, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(apagarBtn))
+                            .addComponent(status_cultivo))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
