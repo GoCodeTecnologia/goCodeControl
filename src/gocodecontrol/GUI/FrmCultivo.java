@@ -95,9 +95,9 @@ public class FrmCultivo extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabela_cultivo);
 
-        graficoQuantidade.setBackground(new java.awt.Color(0, 102, 102));
+        graficoQuantidade.setBackground(new java.awt.Color(115, 78, 166));
         graficoQuantidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        graficoQuantidade.setForeground(new java.awt.Color(255, 255, 255));
+        graficoQuantidade.setForeground(new java.awt.Color(115, 78, 166));
         graficoQuantidade.setText("Cultivo por Produto");
         graficoQuantidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +117,7 @@ public class FrmCultivo extends javax.swing.JFrame {
 
         produtor_produto.setBackground(new java.awt.Color(0, 102, 102));
         produtor_produto.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        produtor_produto.setForeground(new java.awt.Color(255, 255, 255));
+        produtor_produto.setForeground(new java.awt.Color(115, 78, 166));
         produtor_produto.setText("Cultivo porduto e Produtor");
         produtor_produto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class FrmCultivo extends javax.swing.JFrame {
             }
         });
 
-        btnCadastrarCultivo.setBackground(new java.awt.Color(0, 204, 51));
+        btnCadastrarCultivo.setBackground(new java.awt.Color(115, 78, 166));
         btnCadastrarCultivo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCadastrarCultivo.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrarCultivo.setLabel("Novo Cultivo +");
@@ -135,7 +135,7 @@ public class FrmCultivo extends javax.swing.JFrame {
             }
         });
 
-        btnListarDados1.setBackground(new java.awt.Color(0, 204, 51));
+        btnListarDados1.setBackground(new java.awt.Color(115, 78, 166));
         btnListarDados1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnListarDados1.setForeground(new java.awt.Color(255, 255, 255));
         btnListarDados1.setLabel("Carregar Dados Tabela");
@@ -146,7 +146,6 @@ public class FrmCultivo extends javax.swing.JFrame {
         });
 
         apagarBtn.setBackground(new java.awt.Color(255, 0, 0));
-        apagarBtn.setForeground(new java.awt.Color(255, 255, 255));
         apagarBtn.setText("Apagar");
         apagarBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

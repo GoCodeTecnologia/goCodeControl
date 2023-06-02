@@ -64,7 +64,7 @@ public class FrmUnidade extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
-        btnCadastrar3.setBackground(new java.awt.Color(0, 204, 51));
+        btnCadastrar3.setBackground(new java.awt.Color(115, 78, 166));
         btnCadastrar3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCadastrar3.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar3.setLabel("Nova Unidade +");
@@ -74,7 +74,7 @@ public class FrmUnidade extends javax.swing.JFrame {
             }
         });
 
-        Statusunidade.setBackground(new java.awt.Color(0, 204, 51));
+        Statusunidade.setBackground(new java.awt.Color(115, 78, 166));
         Statusunidade.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         Statusunidade.setForeground(new java.awt.Color(255, 255, 255));
         Statusunidade.setLabel("Status de Unidades");
@@ -84,7 +84,7 @@ public class FrmUnidade extends javax.swing.JFrame {
             }
         });
 
-        QuantidadeUnidades1.setBackground(new java.awt.Color(0, 204, 51));
+        QuantidadeUnidades1.setBackground(new java.awt.Color(115, 78, 166));
         QuantidadeUnidades1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         QuantidadeUnidades1.setForeground(new java.awt.Color(255, 255, 255));
         QuantidadeUnidades1.setLabel("Quantidade de Unidades");

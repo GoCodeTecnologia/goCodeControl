@@ -122,7 +122,7 @@ public class Login extends javax.swing.JFrame {
                 // verificacao de permissao para mostar o painel correto
                 switch(dadosUsuario.getCd_permissao()) {
                     //entregador
-                    case 9:
+                    case 4:
                         DashboardEntregador entregador = new DashboardEntregador();
                         entregador.setVisible(true);
                         entregador.setLocationRelativeTo(null);
@@ -130,7 +130,7 @@ public class Login extends javax.swing.JFrame {
                         entregador.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
                     //produtor
-                    case 10:
+                    case 1:
                         DashboardProdutor produtor = new DashboardProdutor();
                         produtor.setVisible(true);
                         produtor.setLocationRelativeTo(null);
@@ -138,7 +138,7 @@ public class Login extends javax.swing.JFrame {
                         produtor.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                     break;
                     //admin  
-                    case 11:
+                    case 2:
                         DashboardInicio dashboard = new DashboardInicio();
                         dashboard.setVisible(true);
                         dashboard.setLocationRelativeTo(null);
@@ -146,6 +146,16 @@ public class Login extends javax.swing.JFrame {
                         dashboard.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
                         dashboard.nome_usuario_label2.setText(dadosUsuario.getNome_usuario());
                         dashboard.carregaSession(dadosUsuario);  
+                    break;
+                    //parceiro  
+                    case 3:
+                        DashboardParceiro parceiro = new DashboardParceiro();
+                        parceiro.setVisible(true);
+                        parceiro.setLocationRelativeTo(null);
+                        parceiro.setTitle("GoCode Control - Parceiro");
+                        parceiro.nome_usuario_label.setText(dadosUsuario.getNome_usuario());
+                        parceiro.nome_usuario_label2.setText(dadosUsuario.getNome_usuario());
+                        parceiro.carregaSession(dadosUsuario);
                     break;
                 }
                 

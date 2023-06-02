@@ -63,7 +63,7 @@ public class FrmTalhao extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
-        btnCadastrar.setBackground(new java.awt.Color(0, 204, 51));
+        btnCadastrar.setBackground(new java.awt.Color(115, 78, 166));
         btnCadastrar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar.setLabel("Novo Talhão +");
@@ -107,11 +107,12 @@ public class FrmTalhao extends javax.swing.JFrame {
 
         checkAtivo.setText("Ativo");
 
-        btnEditar.setBackground(new java.awt.Color(255, 204, 0));
+        btnEditar.setBackground(new java.awt.Color(115, 78, 166));
         btnEditar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
         btnEditar.setLabel("Editar Dados");
 
-        btnExcluir.setBackground(new java.awt.Color(255, 0, 0));
+        btnExcluir.setBackground(new java.awt.Color(115, 78, 166));
         btnExcluir.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnExcluir.setForeground(new java.awt.Color(255, 255, 255));
         btnExcluir.setLabel("Excluir");
@@ -166,7 +167,7 @@ public class FrmTalhao extends javax.swing.JFrame {
         );
 
         btnGraficoQuantidade.setActionCommand("Status de talhoes");
-        btnGraficoQuantidade.setBackground(new java.awt.Color(0, 204, 51));
+        btnGraficoQuantidade.setBackground(new java.awt.Color(115, 78, 166));
         btnGraficoQuantidade.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGraficoQuantidade.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnGraficoQuantidade.setForeground(new java.awt.Color(255, 255, 255));
@@ -178,7 +179,7 @@ public class FrmTalhao extends javax.swing.JFrame {
             }
         });
 
-        btnListarDados1.setBackground(new java.awt.Color(0, 204, 51));
+        btnListarDados1.setBackground(new java.awt.Color(115, 78, 166));
         btnListarDados1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnListarDados1.setForeground(new java.awt.Color(255, 255, 255));
         btnListarDados1.setLabel("Carregar Dados Tabela");
@@ -189,7 +190,7 @@ public class FrmTalhao extends javax.swing.JFrame {
         });
 
         btnGraficoStatus.setActionCommand("Status de talhoes");
-        btnGraficoStatus.setBackground(new java.awt.Color(0, 204, 51));
+        btnGraficoStatus.setBackground(new java.awt.Color(115, 78, 166));
         btnGraficoStatus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnGraficoStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnGraficoStatus.setForeground(new java.awt.Color(255, 255, 255));

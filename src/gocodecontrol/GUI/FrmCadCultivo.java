@@ -259,7 +259,7 @@ public class FrmCadCultivo extends javax.swing.JFrame {
         jPanel25.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastrar novo item", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
         jPanel25.setToolTipText("");
 
-        btnCadastrar11.setBackground(new java.awt.Color(0, 204, 51));
+        btnCadastrar11.setBackground(new java.awt.Color(115, 78, 166));
         btnCadastrar11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCadastrar11.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar11.setLabel("Cadastrar");

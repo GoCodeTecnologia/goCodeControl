@@ -134,4 +134,33 @@ public class ProdutoDAO {
             return false;
         }
     }
+    public boolean alterar(Produto prod) {
+        try {
+                String sql = "UPDATE produto SET nm_produto=?, valor=? WHERE cd_produto = ?";
+                PreparedStatement ps = this.conn.getConexao().prepareStatement(sql);
+
+                ps.setString(1, prod.getNm_produto());
+                ps.setDouble(2, prod.getValor());
+                ps.setInt(3, prod.getCd_produto());
+                ps.executeUpdate();
+                this.conn.confirmar();
+                return true;
+        }
+        catch (SQLException e) {
+            return false;
+        }
+    }
+    
+    public boolean excluir(int codExcluir) {
+        try {
+            String sql = "DELETE FROM produto WHERE cd_produto = '" + codExcluir + "'";
+            System.out.println(sql);
+            PreparedStatement ps = this.conn.getConexao().prepareStatement(sql);
+            ps.executeUpdate();
+            this.conn.confirmar();
+            return true;
+        } catch (SQLException e) {
+            return false;
+        }
+    }
 }

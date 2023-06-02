@@ -8,7 +8,7 @@ public class Conexao {
     private final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private final String URL = "jdbc:mysql://localhost:3306/coopgreen?useTimezone=true&serverTimezone=UTC";
     private final String USER = "root";
-    private final String PASS = "arlabs2022";
+    private final String PASS = "millena";
     private Connection conn;
 
     public Conexao() throws ClassNotFoundException, SQLException {

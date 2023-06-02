@@ -50,7 +50,7 @@ public class FrmCadTalhao extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastrar novo item", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
         jPanel3.setToolTipText("");
 
-        btnCadastrar.setBackground(new java.awt.Color(0, 204, 51));
+        btnCadastrar.setBackground(new java.awt.Color(115, 78, 166));
         btnCadastrar.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar.setLabel("Cadastrar");
